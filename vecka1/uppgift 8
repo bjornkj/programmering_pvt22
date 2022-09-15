@@ -1,0 +1,4 @@
+Uppgift 8:
+
+1. Titta igenom alla program ni byggt hittills, byt ut till f-string där det behövs.
+2. Ändra så att kalkylatorprogrammet använder from ... import a, b, c

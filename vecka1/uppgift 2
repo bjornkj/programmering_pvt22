@@ -1,0 +1,6 @@
+Uppgift 2
+
+Fråga användaren: "Vad heter du?" och lagra svaret i en variabel med namnet "name"
+name = input("What is your name?")
+Slå ihop textsträngen "Du heter:" och svaret som du tidigare lagrade i variabeln "name och skriv ut resultatet på skärmen
+print("Du heter: " + name)

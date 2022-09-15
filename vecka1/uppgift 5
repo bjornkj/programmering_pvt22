@@ -1,0 +1,9 @@
+Uppgift 5:
+
+Skriv om programmet från uppgift 4 enligt följande
+
+1. Ändra så att hela while-loopen ligger i en funktion som heter "mainloop", och testa så att programmet fortfarande fungerar.
+
+2. Bygg en funktion "ask_number" som returnerar ett heltal som användaren matar in
+
+3. Ändra på mainloop så att den returnerar antal gissnigar användaren använt sig av, och skriv ut antalet utanför mainloop, inte inuti.

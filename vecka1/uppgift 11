@@ -1,0 +1,5 @@
+Uppgit 11
+
+11.1 Ta en kopia på uppgift 9 och fixa programmet så att int(input(..)) inte kraschar om användaren skriver "abc" (tips: använd try...except block!)
+11.2 Fortsätt jobba med det ni inte blev klara med i uppgift 9, 10
+11.3 Jobba med extrauppgifter som ni hittar länkade på kurssidan
