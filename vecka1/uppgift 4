@@ -2,6 +2,6 @@ Uppgift 4:
 
 Skriv om programmet från uppgift 3 så att:
 Användare frågas efter ett tal mellan 1 och 100 istället
-Översätt programmet itll svenska!
+Översätt programmet till svenska!
 Lägg till en ny variabel "antal_gissningar" som håller reda på hur många gissningar användaren behövde för att hitta talet.
 Skriv ut hur många gissningar användaren behövde för att hitta talet.
