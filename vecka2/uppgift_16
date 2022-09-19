@@ -1,0 +1,2 @@
+Uppgift: Ni behöver genomsöka en stor loggfil och hitta hitta rader som innehåller texten “BEAR” eller “X-RAY”.
+Loggfilen heter system.log, och skriv ett program som listar alla sådana rader. Vilken mening hittar ni?
