@@ -1,0 +1,7 @@
+Grundläggande JSON
+
+1. Läs in filen data.json, spara i en variabel.
+2. Använde modulen json för att tolka innehållet från filen
+    import json
+    data = json.loads(filens_innehåll)
+3. Använd debuggern för att undersöka vilka datatyper ni kan hitta i data-variabeln

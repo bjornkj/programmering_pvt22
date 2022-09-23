@@ -1,0 +1,17 @@
+[
+  12,
+  3.5,
+  4,
+  true,
+  false,
+  "vi kan ha text också",
+  "1234908",
+  "99999999",
+  {
+  "bjorn": {
+  "tfn": "12345677",
+  "adress": "Banangränd",
+  "email": "bjorn.kjellgren@hiq.se"
+  }
+  }
+]
