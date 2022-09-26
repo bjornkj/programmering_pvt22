@@ -2,8 +2,6 @@ import pytest
 import uppgift_22
 
 
-
-
 def test_square():
     assert uppgift_22.square(4) == 16
 
@@ -19,6 +17,6 @@ def test_radius():
 def test_factorial():
     assert uppgift_22.factorial(5) == 120
 
+
 def test_factorial_0():
     assert uppgift_22.factorial(0) == 1
-
