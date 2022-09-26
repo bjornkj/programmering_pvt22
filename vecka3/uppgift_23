@@ -1,0 +1,23 @@
+Skriv två funktioner
+
+
+1) weekday(n) -> namn på dagen
+n är dagen i veckan
+Exempel
+weekday(1) -> "Monday"
+weekday(7) -> "Sunday"
+etc.
+
+
+2) day_of_week(day) -> dagens nummer
+Exempel
+day_of_week("Monday") -> 1
+day_of_week("Tuesday") -> 2
+etc.
+
+
+
+
+För båda funktionerna vill jag att ni tänker till hur ni skall hantera felaktiga värden.
+Vad betyder exempelvis weekday(9) eller day_of_week("tomat")?
+Det finns som vanligt flera sätt att hantera fel.
