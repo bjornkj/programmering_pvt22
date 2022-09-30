@@ -1,0 +1,22 @@
+Skapa ett program som skriver ut talen från 1 - 100
+Men om talet är jämt delbart på 3 skriver du ut Fizz istället för talet.
+Om talet är jämt delbart på 5 skriver du ut Buzz istället för talet.
+Om talet är jämt delbart på både 3 och 5 skriver du ut FizzBuzz istället för talet.
+
+
+Exempel:
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz
+
+Förklaring:
+3, 6, 9 12 är delbart på 3
+5, 10 är delbart på 5
+15 är delbart på både 5 och 3
+
+https://en.wikipedia.org/wiki/Fizz_buzz
+
+
+
+Tips % operatorn i python ger divisionsrest vid heltalsdivision
+9 % 4 ger resultatet 1 eftersom 9 delat med 4 är 2 med rest 1
+9 % 3 ger resultatet 0 eftersom vi inte får någon divisionsrest
+https://sv.wikipedia.org/wiki/Heltalsdivision_med_rest
