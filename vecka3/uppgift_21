@@ -1,0 +1,6 @@
+Vi fortsätter med telefonkatalogen från uppgift 19
+Kopiera min kod från github och utöka programmet så att:
+
+
+1) Programmet inte kraschar om phonebook.json inte finns när programmet startar
+2) Automatiskt sparar så fort ett nytt nummer läggs ti
