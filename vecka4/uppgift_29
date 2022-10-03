@@ -1,0 +1,17 @@
+Nu skall vi använda oss av JSON och requests för att hämta data från ett api på webben.
+
+
+1. Se till att requests finns installerat i ditt pycharm-projekt, det är bra att använda sig av en virtuell miljö, så se till att du har en venv konfigurerad.
+
+
+2. Gå in på https://proagile.se/api/publicEvents med din webbläsare,
+
+
+3. Använd requests-biblioteket för att hämta datan till ditt python-program
+result = requests.get() #Fyll på med rätt parametrar.  result.text ger dig själva datan du är intresserad av.
+
+
+4. Använd funktionen pprint (pretty print) för att skriva ut result.json(). pprint finns i den inbyggda modulen pprint
+
+
+5. Vi vill veta när alla  kurser börjar. Skapa ett program som skriver ut alla kursnamn och när dom startar.
