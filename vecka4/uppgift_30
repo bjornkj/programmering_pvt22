@@ -1,0 +1,18 @@
+Fortsättning på uppgift 29
+
+
+Nu skall  vi bearbeta datan vi hämtat lite med hjälp av python och f-string
+
+
+30.1 Skriv ett pythonprogram som använder requests mot URLen ni använde i uppgift 29 och som skriver ut kurstillfällen som sker under under oktober 2022 på den här formen:
+
+
+Kursnamn: Professional Scrum Product Owner, 12-14 oktober, Online
+Startdatum: 2022-10-15
+Slutdatum: 2022-10-17
+.
+.
+.
+
+
+30.2 Istället för att hådkoda just oktober 2022, låt användaren mata in ett år och en månad som du sedan använder för att filtrera fram kurserna som skrivs ut.
