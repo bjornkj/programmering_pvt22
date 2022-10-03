@@ -107,3 +107,4 @@
 # for t in range(1, 10):
 #     for i in range(1, 11):
 #         print(f"{t} * {i:2} = {t*i:3}")
+

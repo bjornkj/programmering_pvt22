@@ -1,0 +1,12 @@
+Ta fram koden ni skapade för uppgift 15
+
+
+Skriv tester för olika delar av programmen.
+
+
+28.1 Konstruera lämplig testdata där du känner till antal ord och bokstäver.
+Finns det andra texter som programmet skulle kunna ha problem med?
+
+
+28.2 Skapa testdata med känt antal vokaler och använd den för att implementera tester.
+Finns det felhantering i ditt program? Om inte, implementera tillsammans med enhetstester.

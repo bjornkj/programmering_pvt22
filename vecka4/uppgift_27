@@ -1,0 +1,9 @@
+Bygg en testsvit för de räknarfunktioner vi arbetade med i uppgift 8 (första veckan)'
+Om er kod ligger i en fil som heter uppgift8.py är konventionen att testerna placeras i en fil som heter test_uppgift8.py.
+
+
+Testa de uppenbara sakerna först, som att add-funktionen faktiskt räknar rätt, gör ett par test på varje funktion.
+Funder sedan på vilka andra tester som kan vara lämpliga, hur vill vi att programmet skall bete sig om vi matar in märkliga värden till funktionerna?
+
+
+Skapa tester och utöka programmet tills det har det beteende du vill.
