@@ -1,0 +1,54 @@
+http://www.omdbapi.com/ är ett API som tillhandahåller data om filmer liknande IMDB.
+För att använda detta API behöver du en api-nyckel, gå till http://www.omdbapi.com/apikey.aspx och ansök om en fri nyckel.
+
+
+31.1 Gå till www.omdbapi.com/?t=Alien&apikey=9f6d550c
+Testa att ändra från Alien till någon annan film.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+31.2 Använd requests.get() med URLen ovan fast ta bort ? och det efter. Skapa istället en ditionary som innehåller nyckarna t och apikey med respektive värden.
+ex: {"t": "Alien", "apiKey":<din nyckel här>}
+När du sedan gör ditt API-anrop med requests.get så skickar du med din dictionary som argumentet params:
+ex: requests.get(url, params={"t": "Alien", "apiKey":<din nyckel här>}
+Använd pprint för att skriva ut resultatet på ett lite snyggare sätt.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+31.3 Bygg ett pythonprogram som frågar användaren efter en film och skriv sedan ut en infobox om filmen ungefär så här:
+
+
+*** Resultat från OMDB! ***
+Alien (1979) regisserades av Ridley Scott.
+Skådisar: Tom Skerritt, Sigourney Weaver, Veronica Cartwright, Harry Dean Stanton
+IMDB betyg: 8.4
+Awards: Won 1 Oscar. Another 16 wins & 22 nominations.
+Längd: 117 min
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+31.4 En bit ner på sidan http://www.omdbapi.com/ hittar du en beskrivning av deras API.
+Skriv ett program som låter användaren söka efter filmer baserat på titel.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+31.5 Utöka ditt program så att när användaren sökt efter en titel kan han/hon välja en film ur resultatet, programmet skriver därefter ut informationen om den filmen som i 31.3.
+
+
+Du kan till exempel skriva ut varje rad ur sökresultatet med ett nummer framför:
+1: Alien
+2. Alien3
+3. Alien Covenant
+..
+
+
+>1
+*** Resultat från OMDB! ***
+Alien (1979) regisserades av Ridley Scott.
+Skådisar: Tom Skerritt, Sigourney Weaver, Veronica Cartwright, Harry Dean Stanton
+IMDB betyg: 8.4
+Awards: Won 1 Oscar. Another 16 wins & 22 nominations.
+Längd: 117 min
