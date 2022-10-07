@@ -7,7 +7,7 @@ Testa att ändra från Alien till någon annan film.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-31.2 Använd requests.get() med URLen ovan fast ta bort ? och det efter. Skapa istället en ditionary som innehåller nyckarna t och apikey med respektive värden.
+31.2 Använd requests.get() med URLen ovan fast ta bort ? och det efter. Skapa istället en dictionary som innehåller nyclkarna t och apikey med respektive värden.
 ex: {"t": "Alien", "apiKey":<din nyckel här>}
 När du sedan gör ditt API-anrop med requests.get så skickar du med din dictionary som argumentet params:
 ex: requests.get(url, params={"t": "Alien", "apiKey":<din nyckel här>}
