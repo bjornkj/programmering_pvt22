@@ -1,0 +1,7 @@
+Skriv enhetstester till pwstrength.compute_strength funktionen:
+
+- lägg en test_pwstrength.py fil bredvid pwstrength.py
+- skriv in tester för alla regler ifrån uppgift 33
+- tänk på att enhetstestfiler ska börja på test_, och att enhetstester (som är vanliga funktioner i Python) också ska börja på test_ för att hittas av pytest!
+
+Hur många tester tycker ni är lagom?
