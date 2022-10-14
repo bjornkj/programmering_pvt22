@@ -1,0 +1,17 @@
+På följande adress hittar ni ett spel skrivet i Python, passande nog snake
+I filen README.md finns en länk till en sida där man steg för steg bygger upp programmet.
+
+https://github.com/bjornkj/snake
+
+
+
+Klona repot och installera de paket som behövs för att få det att köra.
+
+
+36.1 Spelet går lite för snabbt, se om ni kan sakta ner det något.
+
+
+36.2 Det hade varit trevligt om "maten" kunde ha lite olika färg. Skriv kod som väljer en färg slumpmässigt varje gång en ny bit mat skall ritas ut
+
+
+36.3 Kan du ändra så att ormen ritas av cirklar istället för kvadrater?
