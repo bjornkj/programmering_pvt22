@@ -1,0 +1,15 @@
+Vi börjar med lite repetition
+
+
+37.1 Skapa en funktion som läser in namn och ålder på en person och skriver ut en hälsning.
+Ex:
+Namn?> Björn
+Ålder?> 40
+Björn är 40 år gammal!
+
+
+Använd en f-sträng för utskriften
+
+
+37.2 Ta programmet från uppgift 37 och dela upp det så att du har en funktion som läser in information
+från användaren (Namn och ålder) och en funktion som skriver ut hälsningen
