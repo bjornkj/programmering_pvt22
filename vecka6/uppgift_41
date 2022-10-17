@@ -4,5 +4,5 @@ Ett alternativ till att låta funktionen från föregående övningar returnera 
 Ni kan utgå från den cheat-sheet som finns länkad under material.
 
 
-1. Skap en klass Person som har ett namn och en ålder
+1. Skapa en klass Person som har ett namn och en ålder
 2. Skriv om funktionen som läser in namn och ålder så att den nu returnerar en instans av klassen Person
