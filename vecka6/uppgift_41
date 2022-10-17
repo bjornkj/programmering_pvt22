@@ -5,4 +5,5 @@ Ni kan utgå från den cheat-sheet som finns länkad under material.
 
 
 1. Skapa en klass Person som har ett namn och en ålder
-2. Skriv om funktionen som läser in namn och ålder så att den nu returnerar en instans av klassen Person
+2. Skriv om funktionen som läser in namn och ålder så att den nu
+returnerar en instans av klassen Person

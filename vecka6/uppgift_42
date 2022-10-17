@@ -1,0 +1,7 @@
+Skriv ett Pythonprogram som tar in en sträng från användaren, och skriver ut följande:
+
+42.1 Längden på strängen
+42.2 Om strängen är ett "palindrom" eller ej. Exempel på palindrom: rattar, Ebbe.
+     att programmet ska klara att användaren blandar stora och små bokstäver!
+42.3 Utöka programmet så att även uttryck som "Aja Baja" anses vara palindrom,
+     d.v.s filtrera bort alla mellanslag ifrån inputsträngen!

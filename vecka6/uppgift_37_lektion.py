@@ -7,18 +7,41 @@
 #
 # Använd en f-sträng för utskriften
 
-def get_name():
-    return input("Namn?>")
 
-def get_age():
-    return input("Age?>")
+# Skapa en main-funktion i vilken ni:
+# 1. Anropar funktionen för att läsa in namn och ålder
+# 2. Sparar resultatet i två variabler, name och age
+# 3. Anropar funktionen som skriver ut hälsningstexten med name och age som argument.
+# 4. Kör main-funktionen från en if __name__ == '__main__' guard'
+
+# 1. Skapa en klass Person som har ett namn och en ålder
+# 2. Skriv om funktionen som läser in namn och ålder så att den nu
+# returnerar en instans av klassen Person
+
+class Person:
+    name: str
+    age: int
+
+    def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
 
 
-def greet():
-    name = get_name()
-    age = get_age()
+def get_person() -> Person:
+    name = input("Namn?>")
+    age = int(input("Ålder?>"))
 
-    print(f"{name} är {age} år gammal!")
+    return Person(name, age)
 
 
-greet()
+def greet(person: Person):
+    print(f"{person.name} är {person.age} år gammal!")
+
+
+def main():
+    p = get_person()
+    greet(p)
+
+
+if __name__ == '__main__':
+    main()
