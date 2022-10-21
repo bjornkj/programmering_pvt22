@@ -1,0 +1,55 @@
+Detta är en lite större uppgift där du/ni skall bygga ett komplett program, en TODO-applikation
+
+När programmet körs skall det läsa in uppgifter från en fil och sedan presentera följande gränssnitt för användaren
+--------------------------------------
+
+1. Lista uppgifter
+2. Lägg till uppgift
+3. Ta bort uppgift
+4. Avsluta programmet
+--------------------------------------
+
+Ni får själva välja hur ni implementerar de olika funktionerna.
+När programmet avslutas skall alla uppgifter sparas i filen igen.
+
+
+
+43.1 Design.
+Fundera över hur en uppgift skall representeras i programmet.
+Skall ni exempelvis skapa en klass för uppgifter eller använda en dictionary?
+
+Hur skall uppgifter sparas i en fil? Json eller bara ren text?
+
+Vilka olika saker som programmet gör kan ni identifiera? Detta kan vara sådant som.
+- Läsa in uppgifter från fil
+- Skriva ut gränssnittet
+etc.
+
+Tanker är att ni redan innan ni sätter igång och programmerar skall ha en rimligt bra idé om
+vad programmet skall göra och hur det skall gå till rent praktiskt.
+
+Skriv ner det ni kommer fram till i en textfil.
+
+
+43.2
+Implementera gränssnittet.
+Skriv kod som presenterar användaren med gränssnittet som det ser ut i inledningen till uppgiften.
+Programmet behöver ännu inte göra något när man väljer t.ex. lista uppgifter men det kan vara en bra
+idé att exempelvis skriva ut en text i terminalen så att ni ser att det går att välja de olika funktionerna
+
+43.3
+Implementera funktionerna för att lägga till, ta bort samt lista uppgifter.
+
+43.4
+Implementera en funktion för att spara uppgifterna till en fil. Denna funktion skall anropas när man
+väljer att avsluta programmet.
+Det vill säga att om ni startar programmet. Lägger till en uppgift eller två och sedan avslutar
+programmet skall det nu finnas en fil där era uppgifter finns sparade.
+Innan ni sätter igång och försöker skriv kod för detta är det en bra idé att bestämma hur filen skall se ut
+Hur ser en uppgift ut i filen? Hur kan jag spara flera uppgifter i filen på ett sätt så att det är
+lätt att sedan läsa in dom igen?
+
+43.4
+Implementera en funktion som läser in filen med uppgifter. Se till att denna funktion anropas automatiskt när
+programmet startas. Det vill säga att om ni tidigare kört programmet, lagt till två uppgifter och sedan avslutats
+skall ni nästa gång programmet körs se dessa två uppgifter om ni väljer att lista uppgifter.
