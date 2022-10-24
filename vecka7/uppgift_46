@@ -1,0 +1,16 @@
+1. Använd tuple unpacking för att byta plats på värden i två variabler
+
+a = 10
+b = 5
+Skriv kod här för att byta plats på innehållet i a och b så att när programmet kört skall
+a innehålla 5
+b innehålla 10
+Du kan åstadkomma detta utan att använda någon extra variabel.
+
+
+2. Skriv kod för att hitta det minsta värdet i en tuple
+Ex. (12,45,56,7,19,999) skall ge 7 som resultat
+
+
+3. Skriv kod för att hitta det största värdet i en tuple
+Ex. (12,45,56,7,19,999) skall ge 999 som resultat

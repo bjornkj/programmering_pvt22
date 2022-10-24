@@ -1,0 +1,10 @@
+1. Skapa en funktion som ger oss en slumpmässig punkt i tre dimensioner. Det vill säga (x, y, z)
+
+2. Skapa en funktion som skriver ut en sådan punkt på ett snyggt sätt
+3. Skapa en funktion kallad translate som tar en punkt (x, y, z) och en annan tuple med tre värden, vi kan kalla dom (d_x, d_y, d_z) och ger som resultat(returvärde) en ny punkt (x+d_x, y+d_y, z+d_z)
+
+
+
+
+Tänk efter först hur du kan testa att dina funktioner fungerar
+Försök lösa problemet med hjälp av tuple unpacking snarare än genom att använda index.
