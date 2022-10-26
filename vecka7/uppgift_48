@@ -1,0 +1,18 @@
+Vi har gått igenom "".format(..) och % (...) syntaxen. Här är en övning på detta!
+
+
+1. Leta upp en tidigare lösning på en uppgift som innehåller f-strings. Gör en kopia på filen, och byt alla f-strings mot .format. Jämför filerna. Vilken syntax föredrar ni?
+
+
+2. Gör om samma övning fast byt till % (...) syntaxen.
+
+
+3. Går det att göra motsvarande {xyz:20} m.h.a format() eller % syntaxen? D.v.s att kräva ett visst antal tecken utrymme vid utskrift. Googla och läs på, experimentera!
+
+
+4. Samma som (3), fast för vänster, höger, mittenjustering (d.v.s det vi gör med <, > och ^ i f-strings).
+
+
+
+
+Tips: % tuple syntaxen är mycket lik printf i C/C++, så om du kan det så känner du igen dig. T.ex. betyder %s sträng, och %d tal.
