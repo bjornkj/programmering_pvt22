@@ -1,0 +1,6 @@
+Skriv en ny version av programmet från uppgift 6 och 7
+Ni skall lagra referenser till alla funktioner (add, subtract, multiply, divide) i en dictionary
+Beroende på vad användaren väljer för operation hämtar ni funktionen från dictionaryn och kör den med de värden användaren matar in
+
+
+Försök att få till en bättre kodstruktur. Skriv inte bara en lång funktion utan dela upp programmet i mindre komponenter.

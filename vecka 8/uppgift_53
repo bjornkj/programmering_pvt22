@@ -1,0 +1,21 @@
+Programmet som ni hittar i kursens repo innehåller en funktion som frågar användaren efter ett tal,
+därefter skriver funktionen ut samtliga primtalsfaktorer i storleksordning
+
+Uppgiften är att ta fram tester för programmet vilket kompliceras en hel del av att det består av en enda funktion som
+både läser in data från användaren och skriver ut resultatet till terminalen.
+
+För att göra programmet mer testbart behöver ni dela upp det i flera olika funktioner. Enklast är att bryta ut
+primtalsfaktoriseringen i en egen funktion som tar ett heltal som argument och ger en lista av heltal som returvärde.
+Skapa en testfil som heter test_uppgift53.py, i den skapar ni sedan ett antal testfunktioner.
+Saker som kan vara lämpliga att test är:
+Faktorisering av några kända tal
+Faktorisering av ett tal vi vet är ett primtal
+Faktorisering av udda tal
+Faktorisering av jämna tal
+Om ni vill ha hjälp att ta fram testdata kan ni använda Wolfram Alpha
+
+
+https://www.wolframalpha.com/input/?i=prime+factorization+of+36
+
+
+Länken visar primtalsfaktorisering av 36, testa med lite egna tal

@@ -1,0 +1,7 @@
+Vi utgår från uppgift 16
+
+
+Använd filter-funktionen för att ta fram de rader som innehåller BEAR eller X-RAY.
+
+
+För att få det att fungera behöver du skapa en ny funktion som ger True som resultat om en textrad innehåller något av orden vi letar efter
