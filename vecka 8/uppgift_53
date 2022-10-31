@@ -6,7 +6,7 @@ både läser in data från användaren och skriver ut resultatet till terminalen
 
 För att göra programmet mer testbart behöver ni dela upp det i flera olika funktioner. Enklast är att bryta ut
 primtalsfaktoriseringen i en egen funktion som tar ett heltal som argument och ger en lista av heltal som returvärde.
-Skapa en testfil som heter test_uppgift53.py, i den skapar ni sedan ett antal testfunktioner.
+Skapa en testfil som heter test_uppgift_53.py, i den skapar ni sedan ett antal testfunktioner.
 Saker som kan vara lämpliga att test är:
 Faktorisering av några kända tal
 Faktorisering av ett tal vi vet är ett primtal
