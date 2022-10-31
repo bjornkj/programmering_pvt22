@@ -1,9 +1,8 @@
 def tail(s: list):
     """Funktion som tar bort det första elementet av en lista och returnerar resten av listan
     Exempel: tail([1,2,3,4]) - > [2, 3, 4]"""
-    copy_of_s = s[:]  # gör en kopia för att undvika att ändra på listan som ges som argument
-    del copy_of_s[0]
-    return copy_of_s
+    del s[0]
+    return s
 
 
 if __name__ == '__main__':
