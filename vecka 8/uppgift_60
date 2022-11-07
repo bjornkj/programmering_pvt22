@@ -16,7 +16,7 @@ obj = lambda s: s.upper()
 join_as_lambda = lambda strings, inbetween: inbetween.join(strings)
 
 
-51.4 Vad kommer följande program att skriva ut? Läs och diskutera först.
+60.4 Vad kommer följande program att skriva ut? Läs och diskutera först.
 Testkör därefter, och förklara varför ni får det resultat ni får...
 
 anna = ("Anna", "Persson", 42)
