@@ -5,8 +5,8 @@
 # 6.3 Multiplikation och division är inte färdigt, bara funktionerna finns. Utöka programmet så att alla fyra räknesätten finns med.
 
 def add(a, b):
-result = a + b
-return result
+    result = a + b
+    return result
 
 
 def subtract(a, b):
