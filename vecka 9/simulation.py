@@ -30,8 +30,7 @@ class PhysicsSim:
 
     def update(self, dt: float):
         for po in self.objects:
+            if po.pos[1] + (po.vel[1] + 9.82 * dt) * dt >= self.height:
+                po.vel = po.vel[0], - po.vel[1]
             po.vel = po.vel[0], po.vel[1] + 9.82 * dt
             po.pos = po.pos[0] + po.vel[0] * dt, po.pos[1] + po.vel[1] * dt
-
-            if po.pos[1] > self.height - 10:
-                po.pos = po.pos[0], 768 - 10

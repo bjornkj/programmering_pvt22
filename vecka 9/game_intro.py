@@ -43,7 +43,7 @@ physical_objects.append(boll)
 
 sim = PhysicsSim(SCREEN_WIDTH, SCREEN_HEIGHT)
 
-for _ in range(15):
+for _ in range(300):
     p = PhysicsObject((random.randint(0, 1024), random.randint(0, 150)), (0, 0))
     physical_objects.append(p)
 
