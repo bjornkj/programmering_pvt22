@@ -1,3 +1,4 @@
+from __future__ import annotations
 from datetime import date
 
 
@@ -43,6 +44,16 @@ class Student(Person):
         super(Student, self).__init__(first_name, last_name, birth_date, address)
         self.credits = credits
 
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
+
+    def take_course(self, course: Course):
+        print(f"Hej, jag är studenten {self.first_name} som skall registrera mig på kursen {course.name}")
+        course.enrol(self)
+
+    def drop_course(self, course: Course):
+        print(f"Hej, jag är studenten {self.first_name} som skall hoppa av kursen {course.name}")
+
 
 class Teacher(Person):
     email: str
@@ -52,6 +63,9 @@ class Teacher(Person):
         super(Teacher, self).__init__(first_name, last_name, birth_date, adress)
         self.email = email
         self.phone_no = phone_no
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
 
 
 class Course:
@@ -71,48 +85,27 @@ class Course:
         self.students = []
         self.teachers = []
 
+    # Skriv in en student på kursen
     def enrol(self, student: Student):
         self.students.append(student)
 
+    # Skriv ut en student från kursen
     def disenrol(self, student: Student):
         if student in self.students:
             self.students.remove(student)
 
+    def __str__(self):
+        teachers = '\n'.join(map(lambda s: str(s), self.teachers))
+        students = '\n'.join(map(lambda s: str(s), self.students))
+        return f"{self.course_id} {self.name}. {self.start_date} - {self.end_date}\nTeachers:\n{teachers}\nStudents:\n{students}"
+
 
 
 if __name__ == '__main__':
-    kalles_adress = Address("Ankvägen", "13", "12345", "Ankeborg", "Sverige")
-    kalle = Person("Kalle", "Anka", date(1940, 4, 12), kalles_adress)
-
-
-    kajsas_adress = Address("Ankvägen", "13", "12345", "Ankeborg", "Sverige")
-    kajsa = Person("Kajsa", "Anka", date(1942, 1, 28), kajsas_adress)
-
-    print(kalle.first_name)
-    print(kalle.address)
-
-    print("-"*80)
-    print("Kajsa")
-    print(kajsa.address)
-
-    print("-"*80)
-
-    print("Är det samma adress? kalle.adress == kajsa.adress")
-    print(kalle.address == kajsa.address)
-
-    print(id(kalle.address))
-    print(id(kajsa.address))
-    print("-" * 80)
-
     studenten = Student("Björn", "Kjellgren", date(1980, 12, 4), 230)
 
-    print(studenten.first_name)
-    print(isinstance(studenten, Student))
-    print(isinstance(studenten, Person))
-
     larare = Teacher("Läraren", "Lärarsson", date(1970, 1, 30), "asdf@askldjf.com", "12345")
-
-    print(isinstance(larare, Person))
-    print(isinstance(larare, Teacher))
-    print(isinstance(larare, Student))
-
+    kurs = Course("prg101", "Programmering", date(2022, 10, 25), date(2022, 12, 15))
+    kurs.teachers.append(larare)
+    studenten.take_course(kurs)
+    print(kurs)
