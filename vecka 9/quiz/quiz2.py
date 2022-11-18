@@ -28,7 +28,7 @@ for question in requests.get("https://bjornkjellgren.se/quiz/v2/questions").json
         print("Fel!")
         question_user_got_wrong.append((question, user_answer))
     print("-" * 80)
-print("#"*80)
+print("%"*80)
 print(f"Du fick {num_correct} av {question_num} rätt!")
 print("Följande frågor besvarades fel")
 for question, ans in question_user_got_wrong:
