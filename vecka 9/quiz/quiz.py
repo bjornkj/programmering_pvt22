@@ -85,7 +85,8 @@ class WebQuizAPI(QuizAPI):
     def _parse_answers(self, answers) -> list[Answer]:
         return [self._parse_answer(ans) for ans in answers]
 
-    def _parse_answer(self, ans) -> Answer:
+    @staticmethod
+    def _parse_answer(ans) -> Answer:
         return Answer(ans['answer'], bool(ans['correct']))
 
 
@@ -139,12 +140,14 @@ class Quiz:
     player: Player
     questions_asked: int
     questions_correct: int
+    failed_questions = list[tuple[Question, Answer]]
 
-    def __init__(self, quiz_api, player):
+    def __init__(self, quiz_api: QuizAPI, player: Player):
         self.quiz_api = quiz_api
         self.player = player
         self.questions_asked = 0
         self.questions_correct = 0
+        self.failed_questions = []
 
     def run(self):
         for question in self.quiz_api.get_questions():
@@ -152,13 +155,28 @@ class Quiz:
             self.questions_asked += 1
             if ans.correct:
                 self.questions_correct += 1
+            else:
+                self.failed_questions.append((question, ans))
             self.quiz_api.send_feedback(question, ans)
+
+        self.print_results()
+
+    def print_results(self):
 
         print(f"{self.questions_correct} of {self.questions_asked} correct")
 
+        print("Du fick fel på följande frågor")
+        for question, answer in self.failed_questions:
+            print(question.prompt)
+            print(f"Du svarade {answer.answer_text}")
+            print("Rätt svar är")
+            for i, ans in enumerate(question.answers, start=1):
+                if ans.correct:
+                    print(f"{i}> {ans.answer_text}")
+
 
 if __name__ == '__main__':
-    #q_api = BjornsFakeAPI()
+    # q_api = BjornsFakeAPI()
     q_api = WebQuizAPI("https://bjornkjellgren.se/quiz/v2/questions")
     # p = Player()
     # p = CheatingPlayer()

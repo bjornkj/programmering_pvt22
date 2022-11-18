@@ -1,0 +1,11 @@
+
+
+
+
+1. Krav från kund/användare ->
+2. Bryt ner kravet i genomförbara ändringar i systemet. ->
+3. Planera in i en sprint och utveckla ->
+4. Utvecklaren testar ->
+5. kodgranskning och test inom teamet ->
+6. Release till testmiljö och acceptanstest genomförs av applikationsexperter->
+7. Release till produktionsmiljön, användarna börjar använda den nya koden.
