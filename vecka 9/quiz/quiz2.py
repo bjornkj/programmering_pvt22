@@ -1,11 +1,13 @@
 import requests
 
+API_URL = "https://bjornkjellgren.se/quiz/v2/questions"
+PROXIES = None
 
 question_num = 0
 num_correct = 0
 question_user_got_wrong = []
 
-for question in requests.get("https://bjornkjellgren.se/quiz/v2/questions").json()['questions']:
+for question in requests.get(API_URL, proxies=PROXIES).json()['questions']:
     question_num += 1
     print(f"({question_num})", question['prompt'])
 
