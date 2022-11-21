@@ -30,7 +30,18 @@ import requests as requests
 # Kan få frågor
 # Kan ge en siffra som svar
 
+
 class Answer:
+    """Class representing one answer to a Question
+
+    Attributes
+    ----------
+    answer_text : str
+        The answer text
+    correct : bool
+        True if this is a correct answer to the question
+        False if not
+    """
     answer_text: str
     correct: bool
 
@@ -40,6 +51,14 @@ class Answer:
 
 
 class Question:
+    """Class representing one question
+
+    Attributes
+    ----------
+    answers : list[Answer]
+        The list of Answer to the question
+
+    """
     answers: list[Answer]
     prompt: str
     question_id: int
@@ -63,18 +82,33 @@ class QuizAPI:
 
 
 class WebQuizAPI(QuizAPI):
+    """"""
     url: str
 
     def __init__(self, url):
+        """"""
         self.url = url
 
     def get_questions(self) -> list[Question]:
+        """"""
         # return [Question(1, "Vilken funktion använder vi för att skriva ut saker i terminalen?", 10, 5,
         #                 [Answer("print()", True), Answer("input()", False)])]
         questions = requests.get(self.url).json()['questions']
         return [self._parse_question(question) for question in questions]
 
     def send_feedback(self, question: Question, answer: Answer):
+        """Sends results for a single question back to the API
+
+        Parameters:
+            question : Question
+
+            answer : Answer
+                The answer the user selected
+
+        Returns: None
+
+        Raises:
+        """
         pass
 
     def _parse_question(self, question) -> Question:
@@ -116,6 +150,7 @@ class ConsolePlayer(Player):
 
 
 class CheatingPlayer(Player):
+    """"""
     def ask_question(self, question: Question) -> Answer:
         print(question.prompt)
         for i, answer in enumerate(question.answers, start=1):
@@ -176,10 +211,9 @@ class Quiz:
 
 
 if __name__ == '__main__':
-    # q_api = BjornsFakeAPI()
     q_api = WebQuizAPI("https://bjornkjellgren.se/quiz/v2/questions")
-    # p = Player()
-    # p = CheatingPlayer()
     p = DunningKrugerPlayer()
     quiz = Quiz(q_api, p)
-    quiz.run()
+    # quiz.run()
+    print(Answer.__doc__)
+
