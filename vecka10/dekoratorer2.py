@@ -1,4 +1,4 @@
-
+import time
 # Jag vill lägga till funktionalitet, före och efter ett funktionsanrop
 
 
@@ -27,5 +27,21 @@ def foo():
 # Använd module time
 #
 
+def timeit(func):
+    def inner(a, b):
+        start_time = time.time()
+        result = func(a, b)
+        print(f"tog {time.time() - start_time} sekunder")
+        return result
+    return inner
+
+
+@timeit
+def slow_add_function(a, b):
+    time.sleep(2)
+    return a + b
+
+
+
 if __name__ == '__main__':
-    foo()
+    print(slow_add_function(2, 2))
